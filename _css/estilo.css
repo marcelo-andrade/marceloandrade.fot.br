@@ -1,0 +1,62 @@
+.mdev-home-container{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+.boxAnimScrollDown{
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boxAnimScrollDown .btn{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #333;
+    border-width: 3px;
+}
+
+.boxBackground{
+    flex-shrink: 0;
+    width:40vw;
+    background-image: url(../images/_15e19191-6f4d-4bfa-b954-d9b16b2eb711.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;        
+}
+.boxContainer{
+    display: flex;
+    align-items: center;
+    border:solid 5px #000;
+    width:100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 100%);
+}
+
+.boxAvatar{
+    width:200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:solid 5px #333;
+}
+
+
+.boxContainerApps{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:1em;
+}
+@media(min-width:1000px){
+    .boxContainerApps{
+        grid-template-columns: repeat(4, 1fr);
+    }   
+}
+
+
+footer.rodape{
+    background-color: #000;
+}
